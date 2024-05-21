@@ -1,0 +1,148 @@
+
+  /* }
+  @font-face {
+    font-family: circula std;
+    src: url(./circular-std-medium-500.ttf);
+  }
+  @font-face {
+    font-family: dm sans;
+    src: url(./DMSans-Regular.ttf);
+  }
+  
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+  }
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 20px 0;
+    margin: auto;
+  }
+  
+  .hide-menu{
+    display: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #60e1cb;
+    font-family: "dm sans";
+}
+.times{
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  /* CSS rules for small screens */
+  /* ul {
+    display: block;
+    gap: 10px;
+    list-style: none;
+    text-align: left;
+    justify-content: end;
+    padding: 10px;
+  }
+}
+
+
+.form{
+  height: 600px;
+  width: 500px;
+  border:1px solid #ececec;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 50px auto;
+}
+
+.form-control{
+  width:470px;
+  margin-bottom: 30px;
+
+}
+
+.from-control label{
+  display:inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input{
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+}
+.form-control.success input{
+  border: 1px solid green;
+}
+
+.form-control.error input{
+  border: 1px solid red;
+}
+
+.form-control span{
+  font-size: 14px;
+  visibility: hidden;
+}
+.form-control.error span{
+  color: tomato;
+  visibility: visible;
+}
+
+button{
+  width: 100%;
+  padding: 10px 8px;
+} */ 
+
+
+
+
+form{
+  height: 600px;
+  width: 500px;
+  border:1px solid #ececec;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 50px auto;
+}
+
+.form-control{
+  width:470px;
+  margin-bottom: 30px;
+
+}
+.from-control label{
+  display:inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input{
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+}
+.form-control.small{
+  font-size: 14px;
+  visibility: hidden;
+}
+.form-control.error small{
+  color: tomato;
+  visibility: visible;
+}
+
+.form-control.success input{
+  border: 1px solid green;
+}
+
+.form-control.error input{
+  border: 1px solid red;
+}
+
+button{
+  width: 100%;
+  padding: 10px 8px;
+}

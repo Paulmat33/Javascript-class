@@ -45,79 +45,115 @@
       </div>
     </header>
 
-    <h1 id="unknown" class="project project2"> This is a new work page</h1>
+    <h1 id="unknown" class="project project2">This is a new work page</h1>
 
+    <form class="form" id="form">
+      <div class="form-control">
+        <label>Username</label>
+        <input type="text" placeholder="Enter your Username" id="username" />
+        <span></span>
+      </div>
 
+      <div class="form-control">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your Email" id="email" />
+        <span></span>
+      </div>
 
+      <div class="form-control">
+        <label>Password</label>
+        <input
+          type="password"
+          placeholder="enter your Password"
+          id="password"
+        />
+        <span></span>
+      </div>
 
+      <div class="form-control">
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Confirm Password" id="password2" />
+        <span></span>
+      </div>
 
-      <form class="form" id="form">
-        <div class="form-control">
-          <label>Username</label>
-          <input type="text" placeholder="Enter your Username" id="username"/>
-          <span></span>
-        </div>
+      <div>
+        <button>Submit</button>
+      </div>
+    </form>
+    -->
+<!-- 
+    <form>
+      <div class="form-control">
+        <label>Username</label>
+        <input type="username" placeholder="username" id="username" />
+        <small></small>
+      </div>
 
-        <div class="form-control">
-          <label>Email</label>
-          <input type="email" placeholder="Enter your Email" id="email"/>
-          <span></span>
-        </div>
+      <div class="form-control">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" id="email" />
+        <small></small>
+      </div>
 
-        <div class="form-control">
-          <label>Password</label>
-          <input type="password" placeholder="enter your Password" id="password"/>
-          <span></span>
-        </div>
+      <div class="form-control">
+        <label>Password</label>
+        <input
+          type="password"
+          placeholder=" enter your password"
+          id="password"
+        />
+        <small></small>
+      </div>
 
-        <div class="form-control">
-          <label>Confirm Password</label>
-          <input type="password" placeholder="Confirm Password" id="password2"/>
-          <span></span>
-        </div>
+      <div class="form-control">
+        <label> Confirm Password</label>
+        <input type="password2" placeholder="Confirm password" id="password2" />
+        <small></small>
+      </div>
 
-        <div>
-          <button>Submit</button>
-        </div>
-      </form> --> 
+      <div>
+        <button>Submit</button>
+      </div>
+    </form>
 
+    <img src="" alt="" id="image1" />  -->
 
-      <form>
-        <div class="form-control">
-          <label>Username</label>
-          <input type="username" placeholder="username" id="username">
-          <small></small>
-        </div>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
 
-        <div class="form-control">
-          <label>Email</label>
-          <input type="email" placeholder="Enter your email" id="email">
-          <small></small>
-        </div>
+      <ul>
+        <li><a href="#">Coding2go</a></li>
+        <li class="hideOnMobile"><a href="#">Blog</a></li>
+        <li class="hideOnMobile"><a href="#">Products</a></li>
+        <li class="hideOnMobile"><a href="#">About</a></li>
+        <li class="hideOnMobile"><a href="#">Forum</a></li>
+        <li class="hideOnMobile"><a href="#">Login</a></li>
+        <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+    </nav>
 
-        <div class="form-control">
-          <label>Password</label>
-          <input type="password" placeholder=" enter your password" id="password">
-          <small></small>
-        </div>
-
-        <div class="form-control">
-          <label> Confirm Password</label>
-          <input type="password2" placeholder="Confirm password" id="password2">
-          <small></small>
-        </div>
-
-        <div>
-          <button>Submit</button>
-        </div>
-      </form>
-
-
-    
-      <script
+    <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
+
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
     <script src="script.js"></script>
   </body>
 </html>

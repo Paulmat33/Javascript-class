@@ -396,7 +396,7 @@ const handleClick = () => {
     container.classList.toggle('hide-menu')
     
 }
-btn.addEventListener('click',handleClick)
+// btn.addEventListener('click',handleClick)
 
 
 
@@ -427,4 +427,15 @@ function formValidation(e){
 
 }
 
-form.addEventListener('submit', formValidation)
+// form.addEventListener('submit', formValidation)
+
+
+
+fetch('https://pixabay.com/api/videos/?key=44013539-b83118e9bfda0ac4f6e855e9d&q=yellow+flowers')
+.then(res => res.json())
+.then(data => {
+    console.log(data)
+    const imgUrl = data.hits[0].userImageURL
+    const imageEle = document.querySelector('#image1')
+    imageEle.src = imgUrl
+})
